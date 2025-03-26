@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Dumbbell Workout - Day 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
+        h1 { text-align: center; font-size: 1.5em; }
+        .intro { text-align: center; margin-bottom: 20px; }
+        .intro p { margin: 5px 0; }
+        .day { margin: 20px 0; }
+        .day h2 { background: #333; color: white; padding: 10px; cursor: pointer; }
+        .exercises { display: none; padding: 10px; }
+        .exercises.show { display: block; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 15px 0; }
+        .set { display: flex; align-items: center; flex-wrap: wrap; margin: 5px 0; }
+        input { width: 60px; margin: 0 5px; padding: 2px; }
+        label { margin-right: 5px; }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.2em; }
+            .day h2 { font-size: 1em; }
+            input { width: 50px; }
+            .intro { font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <h1>5-Day Dumbbell Workout</h1>
+    <div class="intro">
+        <p><a href="https://www.muscleandstrength.com/workouts/5-day-dumbbell-only-workout-split">Link to Workout</a></p>
+    </div>
+
+    <div class="day">
+        <h2 onclick="toggleExercises(this)">Day 1: Chest, Shoulders & Triceps</h2>
+        <div class="exercises">
+            <ul>
+                <li>Dumbbell Bench Press (5 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="bench" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bench" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="bench" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bench" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="bench" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bench" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="bench" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bench" data-set="4"></div>
+                    <div class="set"><label>Set 5 Reps:</label><input type="number" min="0" class="reps" data-exercise="bench" data-set="5"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bench" data-set="5"></div>
+                </li>
+                <li>Incline Dumbbell Bench Press (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="4"></div>
+                </li>
+                <li>Dumbbell Floor Press (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="floor_press" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="floor_press" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="floor_press" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="floor_press" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="floor_press" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="floor_press" data-set="3"></div>
+                </li>
+                <li>Standing Dumbbell Press (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="standing_press" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="standing_press" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="standing_press" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="standing_press" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="standing_press" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="standing_press" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="standing_press" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="standing_press" data-set="4"></div>
+                </li>
+                <li>Dumbbell Lateral Raise (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="lateral_raise" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="lateral_raise" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="lateral_raise" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="lateral_raise" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="lateral_raise" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="lateral_raise" data-set="3"></div>
+                </li>
+                <li>Dumbbell Tricep Kickbacks (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="tricep_kickback" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tricep_kickback" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="tricep_kickback" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tricep_kickback" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="tricep_kickback" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tricep_kickback" data-set="3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="day">
+        <h2 onclick="toggleExercises(this)">Day 2: Legs & Core</h2>
+        <div class="exercises">
+            <ul>
+                <li>Dumbbell Goblet Squat (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="goblet_squat" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="goblet_squat" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="goblet_squat" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="goblet_squat" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="goblet_squat" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="goblet_squat" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="goblet_squat" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="goblet_squat" data-set="4"></div>
+                </li>
+                <li>Dumbbell Stiff Leg Deadlift (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="stiff_deadlift" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="stiff_deadlift" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="stiff_deadlift" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="stiff_deadlift" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="stiff_deadlift" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="stiff_deadlift" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="stiff_deadlift" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="stiff_deadlift" data-set="4"></div>
+                </li>
+                <li>Dumbbell Rear Lunge (4 sets, 8-10 reps each)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="rear_lunge" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="rear_lunge" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="rear_lunge" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="rear_lunge" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="rear_lunge" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="rear_lunge" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="rear_lunge" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="rear_lunge" data-set="4"></div>
+                </li>
+                <li>Dumbbell Frog Squat (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="frog_squat" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="frog_squat" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="frog_squat" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="frog_squat" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="frog_squat" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="frog_squat" data-set="3"></div>
+                </li>
+                <li>Dumbbell Calf Raise (4 sets, 20 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="4"></div>
+                </li>
+                <li>Weighted Crunch (3 sets, 20 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="weighted_crunch" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="weighted_crunch" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="weighted_crunch" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="weighted_crunch" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="weighted_crunch" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="weighted_crunch" data-set="3"></div>
+                </li>
+                <li>Side Planks (3 sets, 20 secs each)
+                    <div class="set"><label>Set 1 Time (s):</label><input type="number" min="0" class="reps" data-exercise="side_plank" data-set="1"></div>
+                    <div class="set"><label>Set 2 Time (s):</label><input type="number" min="0" class="reps" data-exercise="side_plank" data-set="2"></div>
+                    <div class="set"><label>Set 3 Time (s):</label><input type="number" min="0" class="reps" data-exercise="side_plank" data-set="3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="day">
+        <h2 onclick="toggleExercises(this)">Day 3: Back & Biceps</h2>
+        <div class="exercises">
+            <ul>
+                <li>Dumbbell Bent Over Row (4 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="bent_over_row" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bent_over_row" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="bent_over_row" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bent_over_row" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="bent_over_row" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bent_over_row" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="bent_over_row" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bent_over_row" data-set="4"></div>
+                </li>
+                <li>Tripod Dumbbell Row (4 sets, 8-12 reps each)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="tripod_row" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tripod_row" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="tripod_row" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tripod_row" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="tripod_row" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tripod_row" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="tripod_row" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tripod_row" data-set="4"></div>
+                </li>
+                <li>Dumbbell Pullover (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="pullover" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="pullover" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="pullover" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="pullover" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="pullover" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="pullover" data-set="3"></div>
+                </li>
+                <li>Reverse Grip Dumbbell Row (4 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="reverse_row" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="reverse_row" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="reverse_row" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="reverse_row" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="reverse_row" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="reverse_row" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="reverse_row" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="reverse_row" data-set="4"></div>
+                </li>
+                <li>Dumbbell Bicep Curl (3 sets, 10-15 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="bicep_curl" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bicep_curl" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="bicep_curl" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bicep_curl" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="bicep_curl" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="bicep_curl" data-set="3"></div>
+                </li>
+                <li>Dumbbell Hammer Curl (3 sets, 10-15 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="hammer_curl" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hammer_curl" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="hammer_curl" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hammer_curl" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="hammer_curl" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hammer_curl" data-set="3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="day">
+        <h2 onclick="toggleExercises(this)">Day 4: Legs & Core</h2>
+        <div class="exercises">
+            <ul>
+                <li>Dumbbell Squat (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="squat" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="squat" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="squat" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="squat" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="squat" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="squat" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="squat" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="squat" data-set="4"></div>
+                </li>
+                <li>Dumbbell Deadlift (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="deadlift" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="deadlift" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="deadlift" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="deadlift" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="deadlift" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="deadlift" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="deadlift" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="deadlift" data-set="4"></div>
+                </li>
+                <li>Dumbbell Split Squat (3 sets, 8-12 reps each)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="split_squat" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="split_squat" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="split_squat" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="split_squat" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="split_squat" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="split_squat" data-set="3"></div>
+                </li>
+                <li>Dumbbell Hip Thrust (4 sets, 10-15 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="hip_thrust" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hip_thrust" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="hip_thrust" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hip_thrust" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="hip_thrust" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hip_thrust" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="hip_thrust" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="hip_thrust" data-set="4"></div>
+                </li>
+                <li>Dumbbell Calf Raise (4 sets, 20 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="calf_raise" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="calf_raise" data-set="4"></div>
+                </li>
+                <li>Dumbbell Side Bends (3 sets, 15 reps each)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="side_bends" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="side_bends" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="side_bends" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="side_bends" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="side_bends" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="side_bends" data-set="3"></div>
+                </li>
+                <li>Plank (3 sets, 20 secs)
+                    <div class="set"><label>Set 1 Time (s):</label><input type="number" min="0" class="reps" data-exercise="plank" data-set="1"></div>
+                    <div class="set"><label>Set 2 Time (s):</label><input type="number" min="0" class="reps" data-exercise="plank" data-set="2"></div>
+                    <div class="set"><label>Set 3 Time (s):</label><input type="number" min="0" class="reps" data-exercise="plank" data-set="3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="day">
+        <h2 onclick="toggleExercises(this)">Day 5: Complete Upper Body</h2>
+        <div class="exercises">
+            <ul>
+                <li>One Arm Dumbbell Rows (4 sets, 8-10 reps each)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="one_arm_row" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="one_arm_row" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="one_arm_row" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="one_arm_row" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="one_arm_row" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="one_arm_row" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="one_arm_row" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="one_arm_row" data-set="4"></div>
+                </li>
+                <li>Dumbbell Arnold Press (4 sets, 8-10 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="arnold_press" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="arnold_press" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="arnold_press" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="arnold_press" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="arnold_press" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="arnold_press" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="arnold_press" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="arnold_press" data-set="4"></div>
+                </li>
+                <li>Incline Dumbbell Bench Press (4 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="3"></div>
+                    <div class="set"><label>Set 4 Reps:</label><input type="number" min="0" class="reps" data-exercise="incline_bench" data-set="4"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="incline_bench" data-set="4"></div>
+                </li>
+                <li>Chest Supported Dumbbell Row (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="chest_row" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="chest_row" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="chest_row" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="chest_row" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="chest_row" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="chest_row" data-set="3"></div>
+                </li>
+                <li>Dumbbell Pinwheel Curl (2 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="pinwheel_curl" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="pinwheel_curl" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="pinwheel_curl" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="pinwheel_curl" data-set="2"></div>
+                </li>
+                <li>Overhead Dumbbell Tricep Extension (3 sets, 8-12 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="tricep_extension" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tricep_extension" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="tricep_extension" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tricep_extension" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="tricep_extension" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="tricep_extension" data-set="3"></div>
+                </li>
+                <li>Dumbbell Shrug (3 sets, 12-15 reps)
+                    <div class="set"><label>Set 1 Reps:</label><input type="number" min="0" class="reps" data-exercise="shrug" data-set="1"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="shrug" data-set="1"></div>
+                    <div class="set"><label>Set 2 Reps:</label><input type="number" min="0" class="reps" data-exercise="shrug" data-set="2"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="shrug" data-set="2"></div>
+                    <div class="set"><label>Set 3 Reps:</label><input type="number" min="0" class="reps" data-exercise="shrug" data-set="3"><label>Lbs:</label><input type="number" min="0" class="lbs" data-exercise="shrug" data-set="3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleExercises(header) {
+            const exercises = header.nextElementSibling;
+            exercises.classList.toggle('show');
+        }
+
+        // Save input to local storage on change
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', function() {
+                const key = `${this.dataset.exercise}_${this.dataset.set}_${this.className}`;
+                localStorage.setItem(key, this.value);
+            });
+        });
+
+        // Load saved data from local storage
+        document.querySelectorAll('input').forEach(input => {
+            const key = `${input.dataset.exercise}_${input.dataset.set}_${input.className}`;
+            const savedValue = localStorage.getItem(key);
+            if (savedValue) input.value = savedValue;
+        });
+    </script>
+</body>
+</html>
